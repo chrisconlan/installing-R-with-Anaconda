@@ -139,6 +139,7 @@ conda install bowtie
 conda install bedtools
 ```
 
+Check out https://bioconda.github.io/recipes.html#recipes for the full list of Bioconda packages, and https://docs.continuum.io/anaconda/packages/pkg-docs for a full list of Anaconda packages.
 
 ## Opening RStudio with your Anaconda Environment
 Simply run:
