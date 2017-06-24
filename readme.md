@@ -139,3 +139,10 @@ conda install bowtie
 conda install bedtools
 ```
 
+
+## Opening RStudio with your Anaconda Environment
+Simply run:
+```
+rstudio
+```
+in the Anaconda Prompt or the terminal with your Anaconda Environment active. RStudio will open with the R version and packages of the environment. No hassle.
