@@ -1,4 +1,4 @@
-# Installing R and RStudio via Anaconda for Biologists
+# Installing R, RStudio, and Python via Anaconda for Biologists
 
 This guide will take users through installation of R in a new Anaconda virtual environment. I always recommend biologists use
 Anaconda for managing R and its dependencies, because it gives us access to the Bioconda channel. The Bioconda channel
