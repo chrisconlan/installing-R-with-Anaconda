@@ -13,18 +13,22 @@ is a close relationship between Python and R in the biology community, so they a
 principles in this guide can be similarly applied to creating Python environments. See the relevant section of the related
 guide in this repository on installing Python.
 
-## Installing and Setting Up Anaconda (UNIX)
+## Installing Anaconda
 
-Download Anaconda version 4.3.1 (for Python 3.6) for the appropriate system here: https://www.continuum.io/downloads
+The installation process differes for Windows and UNIX users. See the corresponding sections.
 
-On UNIX-like systems, install with the following command:
-`bash Anaconda3-4.3.1-Linux-x86_64.sh`
+### Installing Anaconda (UNIX)
 
-You are encouraged to use the `bash` command regardless whether or not you are in a bash shell. It is very important that Linux users do not run this with `sudo`, as it will confuse Anaconda, causing it to install in the `/root/` directory.
+Download Anaconda version 4.\* (for Python 3.6) for the appropriate system here: https://www.continuum.io/downloads
+
+On UNIX-like systems, navigate into the download directory and run the installer with the following command:
+`bash Anaconda3-4.X.X-Linux-x86_64.sh`
+
+You are encouraged to use the `bash` command regardless whether or not you are in a Bash shell. It is very important that UNIX users do not run this with `sudo`, as it will confuse Anaconda, causing it to install in the `/root/` directory.
 
 When prompted to append the Anaconda path to your system's `$PATH`, it is advised you say `[no]` unless you intend for Anaconda Python to overwrite your system Python.
 
-Test by navigating to the installation directory, then navigating to `bin/` and running `conda --version`.
+Test by navigating to the installation directory (likely `~/anaconda3/`), then navigating to `bin/` and running `conda --version`.
 
 For example:
 
@@ -33,24 +37,28 @@ cd ~/anaconda3/bin
 conda --version
 ```
 
+You should see some version information, verifying Anaconda is successfully installed and you have located the installation directory.
 
-## Installing and Setting Up Anaconda (Windows)
 
-Download Anaconda3 version 4.3.1 (for Python 3.6) for the appropriate system here: https://www.continuum.io/downloads
+### Installing and Setting Up Anaconda (Windows)
+
+Download Anaconda3 version 4.\* (for Python 3.6) for the appropriate system here: https://www.continuum.io/downloads
 
 On Windows, simply run the installer with the default settings.
 
-Windows users may want to untick the box that overwrites the system Python with Anaconda Python 3.6.1.
+Windows users want to untick the box that overwrites the system Python with Anaconda Python 3.6.1.
 
-To verify a successful installation, open the Anaconda Prompt executable (typically found by searching in your taskbar) and run `conda --version`. Locate the
-Anaconda Prompt by searching for it in your Windows Taskbar.
-
+To verify a successful installation, open the Anaconda Prompt executable (typically found by searching "Anaconda Prompt" in your taskbar) and run `conda --version`. 
 
 
 
-## Symlinking Anaconda Commands (UNIX)
+## Setting Up Anaconda (UNIX Only)
 
-If you opted not to say `[no]` to adding Anaconda to your `$PATH` variables (which was advised) you may have to symlink common anaconda commands to continue using this guide. This
+This section pertains to set up that will help you use Anaconda easily in your everyday work. Currently, the only instruction is to symlink a few commands for UNIX users. The Anaconda Prompt in Windows allows us to skip this step.
+
+### Symlinking Anaconda Commands (UNIX)
+
+If you opted not to say `[no]` to adding Anaconda to your `$PATH` variables (which was advised) you have to symlink common anaconda commands to continue using this guide. This
 section does not apply to Windows users, as we will assume they are working out of the Anaconda prompt rather than their system prompt.
 
 Recall the installation location of Anaconda. If you went with the default paths it will be installed at `~/anaconda3` for Linux users. We want to symlink `conda`, `activate`, and `deactivate` so that we can manage virtual environments without messing with our system `$PATH` variables. Use the following commands to symlink the Anaconda commands.
@@ -64,6 +72,8 @@ sudo ln -s /home/<user>/anaconda3/bin/deactivate /usr/bin/deactivate
 ```
 
 Test by running `conda --version` from outside the Anaconda installation directory.
+
+
 
 
 
