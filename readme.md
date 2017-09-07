@@ -83,7 +83,7 @@ We will reference this document: https://conda.io/docs/using/envs.html#create-an
 
 We will name our environment "BioSandbox" for these examples.
 
-To create an environment: `conda create --name BioSandbox python=3.5`
+To create an environment: `conda create --name BioSandbox python=3.6`
 To activate the environment: `source activate BioSandbox`
 To deactivate the environment: `source deactivate BioSandbox`
 To list environments: `conda info --envs`
@@ -100,7 +100,7 @@ We will reference this document: https://conda.io/docs/using/envs.html#create-an
 
 Windows users will run these commands in the Anaconda Prompt. The only difference is Windows users will ignore the `source` command when acitvating and deactivating virtual environments.
 
-To create an environment: `conda create --name BioSandbox python=3.5`
+To create an environment: `conda create --name BioSandbox python=3.6`
 To activate the environment: `activate BioSandbox`
 To deactivate the environment: `deactivate BioSandbox`
 To list environments: `conda info --envs`
